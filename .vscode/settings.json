@@ -1,0 +1,10 @@
+{
+  "accessibility.signals.lineHasError": {
+    "announcement": "auto",
+    "sound": "auto"
+  },
+  "files.associations": {
+    "iostream": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}

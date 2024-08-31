@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let headings1 = document.querySelectorAll("h3");
+      headings1.forEach((item) => {
+        console.log(item);
+      });
+      let headings2 = document.getElementsByTagName("h3");
+      console.log(headings2);
+      // for (var x of headings2) {
+      //   console.log(x);
+      // }
+      let arr = Array.from(headings2);
+      arr.forEach((item) => {
+        console.log(item);
+      });
+    </script>
+  </head>
+  <body>
+    <h3>Java</h3>
+    <h3>Python</h3>
+    <h3>C</h3>
+    <h3>C+</h3>
+    <h3>JavaScript</h3>
+  </body>
+</html>
