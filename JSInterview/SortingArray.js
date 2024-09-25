@@ -12,7 +12,7 @@
 let a = [3,4,55,7,8,9,1];
 
 function compare(a,b) {
-  return a>b ? 1 :-1;
-}
-
-console.log(a.sort(compare))
+    return a>b ? 1 :-1;
+  }
+  
+  console.log(a.sort(compare))
