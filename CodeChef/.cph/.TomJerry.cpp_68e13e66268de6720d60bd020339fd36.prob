@@ -1,0 +1,1 @@
+{"name":"Local: TomJerry","url":"c:\\Users\\HP\\Desktop\\Code\\CodeChef\\TomJerry.cpp","tests":[{"id":1727272052269,"input":"3\n1 1 2 2 2\n1 1 2 3 4\n1 1 1 0 3","output":"YES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\Code\\CodeChef\\TomJerry.cpp","group":"local","local":true}
