@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        // function addLang(lang){
+        //     const li = document.createElement('li')
+        //     li.innerHTML= lang
+        //     li.style.color = 'green'
+        //     const ul = document.querySelector('.language')
+        //     ul.appendChild(li)
+        // }
+        // addLang('Python')
+
+        function othoption (lang){
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(lang))
+            document.querySelector('.language').appendChild(li)
+
+        }
+        othoption('Python')
+
+        // Edit 
+        const editli = document.querySelector("li:nth-child(2)")
+        // editli.innerHTML = "Aarif"   //first way
+        const newli = document.createElement('li')
+        newli.textContent = "Golang"
+        editli.replaceWith(newli)
+
+        // Edit
+        const firstEl = document.querySelector('li:first-child')
+        firstEl.outerHTML = "<li>TypeScript</>"
+
+        // Remove
+        const lastEl = document.querySelector('li:last-child')
+        lastEl.remove()
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      .button {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      #gray {
+        background-color: gray;
+      }
+
+      #yellow {
+        background-color: yellow;
+      }
+
+      #green {
+        background-color: green;
+      }
+
+      #pink {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="button" id="gray"></span>
+      <span class="button" id="yellow"></span>
+      <span class="button" id="green"></span>
+      <span class="button" id="pink"></span>
+    </div>
+
+    <script>
+      const btn = document.querySelectorAll(".button");
+      const body = document.querySelector("body");
+      btn.forEach((b) => {
+        b.addEventListener("click", (e) => {
+          if (e.target.id === "gray") {
+            // body.style.background = "gray";  //second way
+            body.style.background = e.target.id;
+          } else if (e.target.id === "yellow") {
+            body.style.background = e.target.id;
+          } else if (e.target.id === "green") {
+            body.style.background = e.target.id;
+          } else {
+            body.style.background = e.target.id;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

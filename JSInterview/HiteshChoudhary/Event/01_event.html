@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event learnign</title>
+  </head>
+  <body>
+    <ul id="images">
+      <li>
+        <img
+          width="200px"
+          src="https://cdn.britannica.com/16/156416-050-909414BB/peacock-Indian-tail-feathers.jpg"
+          alt="not found"
+        />
+      </li>
+      <li>
+        <img
+          id="peageon"
+          width="200px"
+          src="https://www.allaboutbirds.org/guide/assets/photo/308065631-480px.jpg"
+          alt="Not found"
+        />
+      </li>
+    </ul>
+
+    <script>
+      //   let images = document.getElementById("images");
+      //   let pea = document.getElementById("peageon");
+      //   Event Propagation
+      //   Event Bubling  => only diffrent is event bubling and event captaring is event bubling down to top and and capturing is when you want then start there
+      //   Ex: Event Bubling
+      //   and if you want to not use propagation then simply write  e.stopPropagation
+      //   images.addEventListener(
+      //     "click",
+      //     (e) => {
+      //       console.log("inside the ul");
+      //     },
+      //     false
+      //   );
+      //   pea.addEventListener(
+      //     "click",
+      //     (e) => {
+      //       console.log("click pegieon");
+      //     },
+      //     false
+      //   );
+      //   //   Ex: Event Capturing
+      //   images.addEventListener(
+      //     "click",
+      //     (e) => {
+      //       console.log("inside the ul");
+      //     },
+      //     false
+      //   );
+      //   pea.addEventListener(
+      //     "click",
+      //     (e) => {
+      //       console.log("click pegieon");
+      //     },
+      //     false
+      //   );
+      // for reading purpose
+      // type, timestamp, defaultPrevente
+      // target, toELement, srcElement, currentTarget
+      // clientX, clientY, screenX, screenY
+      // altkey, ctrlKey, shiftKey keyCode,
+      document.querySelector("#images").addEventListener("click", (e) => {
+        if (e.target.tagName === "IMG") {
+            console.log(e.target.id)
+          let removeimg = e.target.parentNode;
+          removeimg.remove(); //first way
+        }
+
+        // removeimg.parentNode.removeChild(removeimg)  //second way
+      });
+    </script>
+  </body>
+</html>
