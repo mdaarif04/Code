@@ -11,6 +11,7 @@ function secondLargest(input) {
   let arr = input.sort((a, b) => a - b);
 //   console.log(arr);
   let res = arr[arr.length-1];
+  
   for(let i= arr.length-2;i>=0; i--){
     if (res!=input[i]) {
         res = input[i];

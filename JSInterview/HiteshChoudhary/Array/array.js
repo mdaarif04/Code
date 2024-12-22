@@ -1,15 +1,18 @@
 const array = new Array(0, 1, 8, 3, 4, 8);
 
 // array.push(5)
+// console.log(array);
+
 // array.unshift(9)  // add starting
 // array.shift()   // remove
 // console.log(array)
 // console.log(array.includes(3))  // return true or false
-// console.log(array.indexOf())  // return index number if availabe otherwise -1
+// console.log(array.indexOf(8))  // return index number if availabe otherwise -1
 
-// const newarray = array.join()
+const newarray = array.join()
+
 // console.log(typeof  array)
-// console.log(typeof  newarray)
+console.log(typeof  newarray)
 
 // console.log("A",array)
 // const arn1 = array.slice(1,3)   //return the array start from 1 to 2 but not include 3
@@ -18,7 +21,7 @@ const array = new Array(0, 1, 8, 3, 4, 8);
 // console.log("C",arn2)
 // console.log(array)
 
-// console.log(array.at(2));  //return excat positon not count indexing start zero
+// console.log(array.at(2));  //return excat positon count indexing start zero or access element in array or string or positvie or negative
 // console.log(array.fill(2, 2,4));  // (kiya fill karna h, kaha se start karna h, kaha tak fill karna h)
 
 // const age = [30, 49, 17, 45];
@@ -53,8 +56,15 @@ const array = new Array(0, 1, 8, 3, 4, 8);
 // console.log(Array.from("Aarif"))     //convert string to array
 // console.log(Array.from({name:"Aarif"}))  //return empty array
 
-let a1 = 100;
-let a2 = 200;
-let a3 = 300;
-console.log(Array.of(a1, a2, a3));  //convert into array
+// let a1 = 100;
+// let a2 = 200;
+// let a3 = 300;
+// console.log(Array.of(a1, a2, a3));  //convert into array
 // console.log(Array.from([a1, a2, a3], (x) => x+x)) //
+
+// const array = [2,3,5,6,7]
+// console.log(array.slice(1, 3));
+// console.log(array)
+// console.log(array.splice(1, 3));
+// console.log(array)
+

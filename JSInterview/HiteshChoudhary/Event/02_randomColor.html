@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color</title>
+  </head>
+  <body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const randomColor = () => {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.ceil(Math.random() * 16)];
+      }
+      return color;
+    };
+
+    // setInterval(function () {
+    //     document.body.style.background = randomColor()
+    // },1000)
+
+    let clearIntervalid;
+    // const startchnagingcolor = function () {
+    //     clearIntervalid=setInterval(changebgColor, 1000)
+    //   function changebgColor() {
+    //     document.body.style.background = randomColor();
+    //   }
+    // };
+    const stopchnagingcolor = function () {
+      clearInterval(clearIntervalid);
+    };
+    // document
+    //   .getElementById("start")
+    //   .addEventListener("click", startchnagingcolor);
+    // document
+    //   .getElementById("stop")
+    //   .addEventListener("click", stopchnagingcolor);
+
+    document.getElementById("start").addEventListener("click", (e) => {
+      function changebgColor() {
+        document.body.style.background = randomColor();
+      }
+      clearIntervalid = setInterval(changebgColor, 1000);
+    });
+    document.getElementById("stop").addEventListener("click", (e) => {
+      clearInterval(clearIntervalid);
+    });
+  </script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Example</title>
+  </head>
+  <body>
+    <h1>Fetch and Promise Example</h1>
+
+    <script>
+      const promisThree = new Promise((resolve, reject) => {
+        fetch("https://dummyjson.com/users")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            const err = true; // Change to true to simulate an error
+            if (!err) {
+              resolve(data.users[0]); // Resolve with the first user
+            } else {
+              
+                
+              reject("Error: Something went wrong");
+            }
+          })
+
+          .catch((error) => reject(error.message));
+      });
+
+      promisThree
+        .then((user) => {
+          return user.username; // Extract the username
+        })
+        .then((username) => {
+          console.log(username); // Log the username
+        })
+        .catch((err) => {
+          console.log(err); // Log the error
+        })
+        .finally(() => console.log("The promise either resolved or rejected"));
+    </script>
+  </body>
+</html>

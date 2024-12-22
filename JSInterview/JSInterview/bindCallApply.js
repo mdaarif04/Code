@@ -5,7 +5,8 @@
 // }
 
 // const person = {name: 'Aarif'}
-// great.call(person,"Hello");
+// great.call(person,"Hello")
+
 
 // apply() => Similar to call(), but arguments are passed as an array.
 
@@ -17,10 +18,10 @@
 // great.apply(person,["Hello"]);
 
 //  bind() => Returns a new function with a specified this context, but doesn't invoke it immediately.
-function great(greating) {
-  console.log(greating, this.name);
-}
+// function great(greating) {
+//   console.log(greating, this.name);
+// }
 
-const person = { name: "Aarif" };
-const greatPreson = great.bind(person);
-greatPreson("hey");
+// const person = { name: "Aarif" };
+// const greatPreson = great.bind(person);
+// greatPreson("hey");

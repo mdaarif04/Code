@@ -18,6 +18,7 @@ const userobj = {
   email: "mdaarifraza03@gmail.com",
   mobile: "9973611892",
 };
+
 // console.log(userobj["email"]);
 // console.log(userobj["full name"]);
 // console.log(userobj.sym);  //not access like thta if we are using Symbol
