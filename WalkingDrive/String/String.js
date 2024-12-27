@@ -11,4 +11,3 @@ const rev = st1.split(" ").reverse().join("")   // By sentance
 console.log(newArra);
 
 
-

@@ -20,5 +20,3 @@ if (st1 === reversstr) {
 // }
 // console.log(po("121"));
 
-
-

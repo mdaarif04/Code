@@ -21,7 +21,5 @@
 // }
 // console.log(primePelindrom(100, 300));
 
-// const st = "everything is possible";
-// const newA= st.split(" ")
-// // console.log(newA);
-// console.log(newA.map((word) => word.split("").reverse().join("")).join(""));
+
+
